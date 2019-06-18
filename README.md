@@ -1,2 +1,3 @@
 # docsify-react
-the brilliant docsify in a react wrapper
+
+The brilliant [docsify](https://docsify.js.org) in a react wrapper.

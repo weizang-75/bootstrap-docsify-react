@@ -1,13 +1,13 @@
-# Paywall; Leads 
+# Paywall Leads 
 
 > [PR #1183](https://github.com/rexlabsio/rex-app/pull/1183)  
 [Clubhouse #27854](https://app.clubhouse.io/rexlabs/story/27854/create-paywall-ux)
 
 ![leads_example](https://user-images.githubusercontent.com/370513/59730902-730d4300-9287-11e9-9ba2-d00ac94f4e11.png)
 
-## Proposed changes
+### Proposed changes
 
-### r2.u.app.menu
+#### r2.u.app.menu
 
 The Advanced Settings Menu Item for Leads is defined in `public/assets/js/r2.u.app.menu.js`. There is an array which contains Objects that look a like this:  
 
@@ -35,7 +35,7 @@ if (module.paywallKey) {
 }
 ```
 
-### Knockout
+#### Knockout
 
 The __paywallKey__ attribute is also present in the data that the knockout view `application/views/templates/admin-shell.html` uses to actually render the menu, so we create a condition in that knockout code which adds the upgrade icon to the link and sets the href property to a new paywall view, passing the value of paywallKey so we can present the right copy for that feature.
 
@@ -43,13 +43,13 @@ The __paywallKey__ attribute is also present in the data that the knockout view 
 <!-- ko if: $data.paywallKey -->
 ```
 
-## QA
+### QA
 
-### Wings Admin
+#### Using Wings Admin
 
 How to toggle the Leads feature in Wings Admin.
 
-## e2e (Experimental)
+#### e2e (Experimental)
 ```
 Feature: Paywall UX; Leads
 

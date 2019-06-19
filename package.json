@@ -18,7 +18,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "push": "clear && git add . && git commit -m '.' && git push && clear && g",
+    "push": "clear && git add . && git commit -m '.' && git push && clear",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

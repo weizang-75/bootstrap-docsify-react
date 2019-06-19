@@ -4,11 +4,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Err, yeh. Edit <code>src/App.jsx</code> and save to reload.
-        </p>
-      </header>
+      React: {Date.now()}
     </div>
   );
 }

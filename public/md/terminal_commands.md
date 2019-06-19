@@ -9,12 +9,11 @@ _probably_ where you'll find the file.
 ```sudo nano ~/.bash_profile```
 
 ```
-source ~/.profile
-alias docs="clear && cd ~/Desktop/START/rex-docs && yarn start"
-alias s="clear && cd ~/Desktop/START && clear && ls -la"
-alias dev="clear && cd ~/Desktop/START/rex-core-product/rex-dev-env && ./rex start"
 alias cl="clear"
 alias l="clear && ls -la"
 alias g="clear && git branch && git status"
+alias docs="clear && cd ~/Desktop/START/docsify-react && yarn start"
+alias s="clear && cd ~/Desktop/START && clear && ls -la"
+alias dev="clear && cd ~/Desktop/START/rex-core-product/rex-dev-env && ./rex start"
 alias r="clear && cd ~/Desktop/START/rex-core-product/rex-app && clear && ls -la"
 ```

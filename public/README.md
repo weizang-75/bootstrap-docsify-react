@@ -45,9 +45,17 @@ The __paywallKey__ attribute is also present in the data that the knockout view 
 
 ### QA
 
+To test this requires being able to turn features on and off for an Agency Level account. 
+[Learn more](./md/rex_accounts.md) about dealing with accounts in Rex world. 
+
+
 #### Using Wings Admin
 
 How to toggle the Leads feature in Wings Admin.
+
+
+### Checklist
+
 
 #### e2e (Experimental)
 ```

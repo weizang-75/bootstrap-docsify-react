@@ -1,4 +1,4 @@
-# Paywall Leads 
+## Paywall Leads 
 
 > [PR #1183](https://github.com/rexlabsio/rex-app/pull/1183)  
 [Clubhouse #27854](https://app.clubhouse.io/rexlabs/story/27854/create-paywall-ux)
@@ -45,18 +45,6 @@ The __paywallKey__ attribute is also present in the data that the knockout view 
 
 ### QA
 
-To test this requires being able to turn features on and off for an Agency Level account. 
-[Learn more](./md/rex_accounts.md) about dealing with accounts in Rex world. 
-
-
-#### Using Wings Admin
-
-How to toggle the Leads feature in Wings Admin.
-
-
-### Checklist
-
-
 #### e2e (Experimental)
 ```
 Feature: Paywall UX; Leads
@@ -73,3 +61,33 @@ Feature: Paywall UX; Leads
         When I click menu item "Leads"
         Then I should see the upgrade prompt in full screen mode
 ```
+
+To test this requires being able to turn features on and off for an Agency Level account. 
+[Learn more](./md/rex_accounts.md) about dealing with accounts in Rex world. 
+
+
+#### Using Wings Admin
+
+How to toggle the Leads feature in Wings Admin.
+
+### UX Doc link
+
+[Rex feature upgrade prompt](https://docs.google.com/document/d/1lmPypYx8PVb_Qdg5NWpmaXwMjf45_gpMrr5Hgb-3hFM/edit#heading=h.vgu80vvtz7qj)
+
+
+### Types of changes
+
+- [x] Breaking change (fix or feature that would cause existing functionality to not work as expected)
+
+### Checklist
+
+- [ ] I have squashed irrelevant commits
+- [ ] ESLint tests pass locally with my changes
+- [ ] I have added necessary documentation (if appropriate)
+- [ ] I have rebased onto develop
+- [ ] I have tested all relevant workflows locally
+
+
+### Further comments
+
+If this is a relatively large or complex change, kick off the discussion by explaining why you chose the solution you did and what alternatives you considered, etc...

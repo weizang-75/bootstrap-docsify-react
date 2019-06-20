@@ -4,8 +4,6 @@
 > [PR #1183](https://github.com/rexlabsio/rex-app/pull/1183)  
 [Clubhouse #27854](https://app.clubhouse.io/rexlabs/story/27854/create-paywall-ux)
 
-![leads_example](https://user-images.githubusercontent.com/370513/59730902-730d4300-9287-11e9-9ba2-d00ac94f4e11.png)
-
 ## Proposed changes
 
 #### r2.u.app.menu
@@ -33,22 +31,42 @@ The __paywallKey__ attribute is also present in the data that the knockout view 
 <!-- ko if: $data.paywallKey -->
 ```
 
+#### Reusable Paywall UX HTML/PHP/CSS
+
 ## QA
 
 To test this requires being able to turn features on and off for an Agency Level account. 
 [Learn more](./md/rex_accounts.md) about dealing with accounts in Rex world.
 
-- ### Step 1
-Switch off the Leads feature for the [account](./md/rex_accounts.md) in [Wings](./md/wings_admin.md)
+- ### Step 1 
+    - Make sure you are using local API by using the `./support/api-switcher.js`  
+```
+// stop rex with ctrl+a k
+yarn api:local
+yarn start
+```
+    - Login to Rex with the root user credentials  
+    email: **alex.babkov@realevo.com** password: __password__  
+    selecting the account "__Brisbane Realty__" 
 
 - ### Step 2
-Navigate to `Advanced -> Settings`.  
-You should see a sparkle Icon next to the Leads menu item.
-Click the Leads link.  
-You should see the paywall screen with text relevant to Leads 
+    - Switch **OFF** the Leads feature for the account in [Wings Admin](http://localhost:20002). 
+    [Learn how](./md/wings_admin.md).
 
 - ### Step 3
-Logout of Rex & toggle the Leads feature in [Wings Admin](http://localhost:20002)
+    - Navigate to `Advanced -> Settings`
+    - You should see a sparkle icon next to the Leads menu item.  
+
+    ![leads sparkled](https://user-images.githubusercontent.com/370513/59814323-39f0d380-9358-11e9-8709-97574a6bab45.png)
+    - Click `Leads`
+    - You should see the paywall screen with relevant text  
+
+    ![leads_example](https://user-images.githubusercontent.com/370513/59730902-730d4300-9287-11e9-9ba2-d00ac94f4e11.png)
+
+- ### Step 4
+    - Logout of Rex 
+    - In [Wings Admin](http://localhost:20002), switch **ON** the Leads feature in [Wings Admin](http://localhost:20002).
+    - Login to Rex with the root user credentials, selecting the account "__Brisbane Realty__" 
 
 
 ## UX Docs

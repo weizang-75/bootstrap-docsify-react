@@ -1,6 +1,16 @@
 {
   "name": "docsify-react",
   "version": "0.0.2",
+  "description": "currently working @rexlabs.io",
+  "license": "OSL-3.0",
+  "author": {
+    "name": "listingslab",
+    "email": "listingslab@gmail.com"
+  },
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/listingslab-software/docsify-react"
+  },
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -8,6 +18,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "push": "clear && git add . && git commit -m '.' && git push && clear",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -26,5 +37,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "keywords": [
+    "docsify",
+    "PWA",
+    "JavaScript",
+    "React",
+    "vue",
+    "Firebase"
+  ]
 }

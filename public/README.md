@@ -39,7 +39,7 @@ To test this requires being able to turn features on and off for an Agency Level
 [Learn more](./md/rex_accounts.md) about dealing with accounts in Rex world.
 
 - ### Step 1
-Switch off the Leads feature for the [Agency](./md/rex_accounts.md)
+Switch off the Leads feature for the [account](./md/rex_accounts.md) in [Wings](./md/wings_admin.md)
 
 - ### Step 2
 Navigate to `Advanced -> Settings`.  

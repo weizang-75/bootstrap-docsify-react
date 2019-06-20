@@ -87,7 +87,6 @@ How to toggle the Leads feature in Wings Admin.
 - [ ] I have rebased onto develop
 - [ ] I have tested all relevant workflows locally
 
-
 ### Further comments
 
 If this is a relatively large or complex change, kick off the discussion by explaining why you chose the solution you did and what alternatives you considered, etc...

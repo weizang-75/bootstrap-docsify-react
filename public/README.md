@@ -1,11 +1,12 @@
-## Paywall Leads 
+
+## Leads Paywall Screen
 
 > [PR #1183](https://github.com/rexlabsio/rex-app/pull/1183)  
 [Clubhouse #27854](https://app.clubhouse.io/rexlabs/story/27854/create-paywall-ux)
 
 ![leads_example](https://user-images.githubusercontent.com/370513/59730902-730d4300-9287-11e9-9ba2-d00ac94f4e11.png)
 
-### Proposed changes
+## Proposed changes
 
 #### r2.u.app.menu
 
@@ -16,26 +17,15 @@ leads: {
     title: 'Leads',
     adminGroup: 'appSettings',
     href: '/admin/settings/leads/',
-    accessRights: 'addon.leads && admin_application.access_section'
+    accessRights: 'addon.leads && admin_application.access_section',
+    paywallKey: 'leads' // New attribute
 },
 ```
 The array gets passed to __self.getModulesIterative__ which checks the user has correct accessRights for each module. If not, _module.locked_ gets set to true and that module is not shown in the menu. If we add an attribute called paywallKey to that Menu object;
 
-```javascript
-leads: {
-    ...,
-    paywallKey: 'leads'
-},
-```
-Then we can stop the module being locked and the Menu item is now shown
+Now we can stop the module being locked and the Menu item is now shown
 
-```javascript
-if (module.paywallKey) {
-    module.locked = false;
-}
-```
-
-#### Knockout
+#### Knockout View
 
 The __paywallKey__ attribute is also present in the data that the knockout view `application/views/templates/admin-shell.html` uses to actually render the menu, so we create a condition in that knockout code which adds the upgrade icon to the link and sets the href property to a new paywall view, passing the value of paywallKey so we can present the right copy for that feature.
 
@@ -43,7 +33,32 @@ The __paywallKey__ attribute is also present in the data that the knockout view 
 <!-- ko if: $data.paywallKey -->
 ```
 
-### QA
+## QA
+
+To test this requires being able to turn features on and off for an Agency Level account. 
+[Learn more](./md/rex_accounts.md) about dealing with accounts in Rex world.
+
+- ### Step 1
+Switch off the Leads feature for the [Agency](./md/rex_accounts.md)
+
+- ### Step 2
+Navigate to `Advanced -> Settings`.  
+You should see a sparkle Icon next to the Leads menu item.
+Click the Leads link.  
+You should see the paywall screen with text relevant to Leads 
+
+- ### Step 3
+Logout of Rex & toggle the Leads feature in [Wings Admin](http://localhost:20002)
+
+
+## UX Docs
+
+- [Rex feature upgrade prompt (Google Doc)](https://docs.google.com/document/d/1lmPypYx8PVb_Qdg5NWpmaXwMjf45_gpMrr5Hgb-3hFM/edit#heading=h.vgu80vvtz7qj)
+
+- [Sketch](https://api.clubhouse.io/api/attachments/files/clubhouse-assets/59b49fbb-ad90-4628-b335-19807d8ed4d4/5ccb9b57-8a83-41b7-ba28-6d078e9ba2b3/R_Generic-Paywall_UX%20(Generic%20Feature%20Paywall)%20copy.sketch)
+
+- [Sparkle SVG](https://api.clubhouse.io/api/attachments/files/clubhouse-assets/59b49fbb-ad90-4628-b335-19807d8ed4d4/5ccb99c5-f2f0-446a-9b05-add04ba9895b/sparkle-group.svg)
+
 
 #### e2e (Experimental)
 ```
@@ -57,29 +72,16 @@ Feature: Paywall UX; Leads
         And I am logged in as "Brisbane Realty" 
         And I and navigate to "Advanced -> Settings"
         Then I should see the menu option "Leads"
-        And I should see the upgrade icon
+        And I should see the sparkle upgrade icon
         When I click menu item "Leads"
         Then I should see the upgrade prompt in full screen mode
 ```
 
-To test this requires being able to turn features on and off for an Agency Level account. 
-[Learn more](./md/rex_accounts.md) about dealing with accounts in Rex world. 
-
-
-#### Using Wings Admin
-
-How to toggle the Leads feature in Wings Admin.
-
-### UX Doc link
-
-[Rex feature upgrade prompt](https://docs.google.com/document/d/1lmPypYx8PVb_Qdg5NWpmaXwMjf45_gpMrr5Hgb-3hFM/edit#heading=h.vgu80vvtz7qj)
-
-
-### Types of changes
+## Types of changes
 
 - [x] Breaking change (fix or feature that would cause existing functionality to not work as expected)
 
-### Checklist
+## Checklist
 
 - [ ] I have squashed irrelevant commits
 - [ ] ESLint tests pass locally with my changes
@@ -87,6 +89,6 @@ How to toggle the Leads feature in Wings Admin.
 - [ ] I have rebased onto develop
 - [ ] I have tested all relevant workflows locally
 
-### Further comments
+## Further comments
 
 If this is a relatively large or complex change, kick off the discussion by explaining why you chose the solution you did and what alternatives you considered, etc...

@@ -1,3 +1,5 @@
+### [Home](../../README.md)
+
 ## Rex Accounts
 
 It's important to know there are 2 levels of account in Rex; 

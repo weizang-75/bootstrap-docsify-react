@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
+import moment from 'moment';
 
 function App() {
   return (
     <div className="App">
-      React: {Date.now()}
+      React: {moment(Date.now()).format("ddd, MMMM Do, h:mm a")}
     </div>
   );
 }

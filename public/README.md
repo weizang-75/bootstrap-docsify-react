@@ -2,6 +2,7 @@
 
 ## Quick Links
 
+- [Markdown](./md/markdown/README.md)
 - [Custom Terminal commands](./md/terminal_commands.md)
 - [Git Fundamentals](./md/git_fundamentals.md)
 - [Emojis :collision:](./md/emojis.md)
@@ -12,6 +13,7 @@
 
 - [Rex App Accounts](./md/rex/rex_accounts.md)
 - [Wings Admin](./md/rex/wings_admin.md)
+- [Classic CSS](./md/rex/wings_admin.md)
 
 ### [WIP] Leads Paywall Screen
 

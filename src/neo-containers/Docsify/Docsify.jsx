@@ -1,6 +1,13 @@
 
 import React, { Component } from 'react';
-
+import muiTheme from '../../theme/mui';
+import cn from 'classnames';
+import { 
+    MuiThemeProvider, 
+    createMuiTheme 
+} from '@material-ui/core/styles';
+import { styles } from './Docsify.Style';
+import { withStyles } from '@material-ui/core/styles';
 import {
     Button,
 } from '@material-ui/core/';
@@ -15,20 +22,24 @@ class Docsify extends Component {
     }
 
     render (){
+        const theme = createMuiTheme( muiTheme );
+        const { classes } = this.props;
         return (
-            <React.Fragment>
-                <Button
-                    variant={`contained`}
-                    color={`secondary`}
-                    onClick={(e) => {
-                        e.preventDefault();
-                        this.runDocsify (e);
-                    }}>
-                    Run Docs
-                </Button>
-            </React.Fragment>
+            <MuiThemeProvider theme={theme}>
+                <div className={cn(classes.docsify)}>
+                    <Button
+                        variant={`contained`}
+                        color={`primary`}
+                        onClick={(e) => {
+                            e.preventDefault();
+                            this.runDocsify (e);
+                        }}>
+                        Run Docs
+                    </Button>
+                </div>
+            </MuiThemeProvider>
         );
     }
 }
 
-export default Docsify;
+export default withStyles(styles, { withTheme: true })(Docsify);

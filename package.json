@@ -1,7 +1,7 @@
 {
   "name": "docsify-react",
-  "version": "0.0.4",
-  "description": "currently working @rexlabs.io",
+  "version": "0.0.5",
+  "description": "The brilliant docsify in a react wrapper.",
   "license": "OSL-3.0",
   "author": {
     "name": "listingslab",

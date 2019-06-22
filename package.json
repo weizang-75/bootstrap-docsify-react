@@ -1,6 +1,6 @@
 {
   "name": "docsify-react",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "The brilliant docsify in a react wrapper.",
   "license": "OSL-3.0",
   "author": {

@@ -1,5 +1,6 @@
 
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import muiTheme from '../../theme/mui';
 import { withStyles } from '@material-ui/core/styles';
 import { styles } from './Docsify.Style';
@@ -8,14 +9,15 @@ import {
     MuiThemeProvider, 
     createMuiTheme 
 } from '@material-ui/core/styles';
-import {
-    Button,
-} from '@material-ui/core/';
+// import {
+//     Button,
+// } from '@material-ui/core/';
+import ScreenFirebaseUI from './ScreenFirebaseUI';
 
 class Docsify extends Component {
 
     componentDidMount () {
-        // this.runDocsify({});
+        // this.runDocsify(null);
     }
 
     runDocsify = (e) => {
@@ -27,23 +29,45 @@ class Docsify extends Component {
 
     render (){
         const theme = createMuiTheme( muiTheme );
-        const { classes } = this.props;
+        const { 
+            classes,
+            docsifyObj
+        } = this.props;
+        const {
+            authed,
+            user,
+        } = docsifyObj;
         return (
             <MuiThemeProvider theme={theme}>
                 <div className={cn(classes.docsify)}>
-                    <Button
+                    {/* <Button
                         variant={`outlined`}
                         color={`primary`}
                         onClick={(e) => {
                             e.preventDefault();
                             this.runDocsify (e);
                         }}>
-                        Run Docsify
-                    </Button>
+                        Run Docsify?
+                    </Button> */}
+
+                        {authed && user !== null ? 
+                            <div>U R Authed.</div> 
+                        : 
+                            <ScreenFirebaseUI /> 
+                        }
+                    
                 </div>
             </MuiThemeProvider>
         );
     }
 }
 
-export default withStyles(styles, { withTheme: true })(Docsify);
+const mapStateToProps = (store) => {
+	return {
+        docsifyObj: store.docsify.docsifyObj,
+	};
+};
+
+export default (
+	connect(mapStateToProps, null)(withStyles(styles, { withTheme: true })(Docsify))
+);

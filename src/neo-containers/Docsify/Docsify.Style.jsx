@@ -10,7 +10,6 @@ export const styles = theme => ({
     },
     screenFirebaseUI:{
         // border: '1px solid red',
-        
         margin: theme.spacing(),
     },
     authUI:{

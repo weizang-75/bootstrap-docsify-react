@@ -9,9 +9,6 @@ import {
     MuiThemeProvider, 
     createMuiTheme 
 } from '@material-ui/core/styles';
-// import {
-//     Button,
-// } from '@material-ui/core/';
 import ScreenFirebaseUI from './ScreenFirebaseUI';
 
 class Docsify extends Component {
@@ -21,6 +18,13 @@ class Docsify extends Component {
     }
 
     runDocsify = (e) => {
+        const script = document.createElement(`script`);
+        script.src = `//unpkg.com/docsify/lib/docsify.min.js`;
+        script.async = true;
+        document.body.appendChild(script);
+    }
+
+    unrunDocsify = (e) => {
         const script = document.createElement(`script`);
         script.src = `//unpkg.com/docsify/lib/docsify.min.js`;
         script.async = true;
@@ -40,22 +44,11 @@ class Docsify extends Component {
         return (
             <MuiThemeProvider theme={theme}>
                 <div className={cn(classes.docsify)}>
-                    {/* <Button
-                        variant={`outlined`}
-                        color={`primary`}
-                        onClick={(e) => {
-                            e.preventDefault();
-                            this.runDocsify (e);
-                        }}>
-                        Run Docsify?
-                    </Button> */}
-
-                        {authed && user !== null ? 
-                            <div>U R Authed.</div> 
-                        : 
-                            <ScreenFirebaseUI /> 
-                        }
-                    
+                    {authed && user !== null ? 
+                        <div>U R Authed.</div> 
+                    : 
+                        <ScreenFirebaseUI runDocsify={this.runDocsify}/> 
+                    }                    
                 </div>
             </MuiThemeProvider>
         );

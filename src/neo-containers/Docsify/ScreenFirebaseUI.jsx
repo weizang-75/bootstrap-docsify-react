@@ -35,7 +35,13 @@ class ScreenFirebaseUI extends Component {
 
   componentDidMount() {
     this.unregisterAuthObserver = firebase.auth().onAuthStateChanged(
-        (user) => this.setState({isSignedIn: !!user})
+        (user) => {
+          this.setState({isSignedIn: !!user});
+          if (user !== null){
+            console.log (user);
+            this.props.runDocsify(null);
+          }
+        }
     );
   }
   
@@ -76,12 +82,11 @@ class ScreenFirebaseUI extends Component {
       }
       return (
         <div className={cn(classes.authUI)}>
-            Welcome {firebase.auth().currentUser.displayName}.
             <Button
                 variant={`contained`}
                 color={`primary`}
                 onClick={() => firebase.auth().signOut()}>
-                    Sign-out
+                    Logout {firebase.auth().currentUser.displayName}
             </Button>
         </div>
       );

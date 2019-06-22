@@ -1,18 +1,22 @@
 
 import React, { Component } from 'react';
 import muiTheme from '../../theme/mui';
+import { withStyles } from '@material-ui/core/styles';
+import { styles } from './Docsify.Style';
 import cn from 'classnames';
 import { 
     MuiThemeProvider, 
     createMuiTheme 
 } from '@material-ui/core/styles';
-import { styles } from './Docsify.Style';
-import { withStyles } from '@material-ui/core/styles';
 import {
     Button,
 } from '@material-ui/core/';
 
 class Docsify extends Component {
+
+    componentDidMount () {
+        // this.runDocsify({});
+    }
 
     runDocsify = (e) => {
         const script = document.createElement(`script`);
@@ -28,13 +32,13 @@ class Docsify extends Component {
             <MuiThemeProvider theme={theme}>
                 <div className={cn(classes.docsify)}>
                     <Button
-                        variant={`contained`}
+                        variant={`outlined`}
                         color={`primary`}
                         onClick={(e) => {
                             e.preventDefault();
                             this.runDocsify (e);
                         }}>
-                        Run Docs
+                        Run Docsify
                     </Button>
                 </div>
             </MuiThemeProvider>

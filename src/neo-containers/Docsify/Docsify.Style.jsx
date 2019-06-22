@@ -4,7 +4,9 @@ import commonStyles from "../../theme/commonStyles";
 export const styles = theme => ({
     ...commonStyles(theme),
     docsify: {
-        border: '1px solid green',
-        padding: 15,
+        position: 'absolute',
+        right: 75,
+        // border: '1px solid green',
+        padding: theme.spacing(),
     },
 });

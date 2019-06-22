@@ -6,7 +6,9 @@
 
 - We need to quickly create, update and share excellent documentation in Markdown 
 - Docs should be edited in native code editor (sublime, VS code, PHP Storm, whatever)
-- Should be able to be deployed as a Progressive Web App
+- Should be able to be deployed to Firebase as a functioning Progressive Web App
+- Should work nicely with GitHub
+- Should have the ability to place content behind Authentication
 - 
 
 ### What is Docsify?

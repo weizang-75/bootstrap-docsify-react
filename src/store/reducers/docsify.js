@@ -2,7 +2,7 @@ const initialState = {
     updated: Date.now(),
     docsifyObj: {
         authed: false,
-        authTitle: `ID Required`,
+        authTitle: `Restricted Content`,
         authInstruction: `Sign in with any syndicated provider`,
         user: null,
     }

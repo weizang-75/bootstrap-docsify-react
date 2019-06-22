@@ -11,10 +11,11 @@ import {
     Button,
     Card,
     CardContent,
-    CardHeader,
-    IconButton,
+    // CardHeader,
+    // IconButton,
+    Typography,
 } from '@material-ui/core/';
-import MoreVertIcon from '@material-ui/icons/MoreVert';
+// import MoreVertIcon from '@material-ui/icons/MoreVert';
 
 class ScreenFirebaseUI extends Component {
 
@@ -64,7 +65,7 @@ class ScreenFirebaseUI extends Component {
     if (!this.state.isSignedIn) {
         return (
           <Card className={cn(classes.authUI)}>
-            <CardHeader
+            {/* <CardHeader
               title={authTitle}
               subheader={authInstruction}
               action={
@@ -72,7 +73,13 @@ class ScreenFirebaseUI extends Component {
                   <MoreVertIcon />
                 </IconButton>
               }
-            />  
+            />   */}
+            <Typography variant={`h5`}>
+              {authTitle}
+            </Typography>
+            <Typography variant={`body1`}>
+              {authInstruction}
+            </Typography>
             <CardContent>
               <StyledFirebaseAuth 
                 uiConfig={this.uiConfig} 

@@ -17,6 +17,8 @@ export const styles = theme => ({
         maxWidth: 360,
         border: 'none',
         borderRadius: 'none',
-        boxShadow: 'none'
+        boxShadow: 'none',
+        paddingTop: theme.spacing(3),
+        textAlign: 'center',
     }
 });

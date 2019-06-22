@@ -1,10 +1,8 @@
 
 import React, { Component } from 'react';
-// import moment from 'moment';
 
 import {
     Button,
-    // Tooltip,
 } from '@material-ui/core/';
 
 class Docsify extends Component {
@@ -19,17 +17,13 @@ class Docsify extends Component {
     render (){
         return (
             <React.Fragment>
-                {/* {`Docsify Docsify Docsify `}
-                React: {moment(Date.now()).format("dddd, MMMM Do YYYY, h:mm:ss a")} */}
-
                 <Button
                     variant={`contained`}
                     color={`secondary`}
                     onClick={(e) => {
                         e.preventDefault();
                         this.runDocsify (e);
-                    }}
-                >
+                    }}>
                     Run Docs
                 </Button>
             </React.Fragment>

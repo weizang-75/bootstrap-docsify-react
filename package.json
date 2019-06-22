@@ -1,7 +1,7 @@
 {
   "name": "docsify-react",
-  "version": "0.1.2",
-  "description": "The brilliant docsify in a react wrapper.",
+  "version": "0.1.3",
+  "description": "The brilliant docsify with a React wrapper.",
   "license": "OSL-3.0",
   "author": {
     "name": "listingslab",
@@ -17,6 +17,8 @@
     "@material-ui/lab": "^4.0.0-alpha.16",
     "classnames": "^2.2.6",
     "firebase": "^6.2.2",
+    "gulp": "^4.0.2",
+    "gulp-color": "^0.0.2",
     "moment": "^2.24.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -29,8 +31,8 @@
     "redux-saga": "^1.0.3"
   },
   "scripts": {
+    "deploy": "react-scripts build && gulp deploy",
     "start": "react-scripts start",
-    "push": "clear && git add . && git commit -m '.' && git push && clear",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

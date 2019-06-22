@@ -24,13 +24,6 @@ class Docsify extends Component {
         document.body.appendChild(script);
     }
 
-    unrunDocsify = (e) => {
-        const script = document.createElement(`script`);
-        script.src = `//unpkg.com/docsify/lib/docsify.min.js`;
-        script.async = true;
-        document.body.appendChild(script);
-    }
-
     render (){
         const theme = createMuiTheme( muiTheme );
         const { 

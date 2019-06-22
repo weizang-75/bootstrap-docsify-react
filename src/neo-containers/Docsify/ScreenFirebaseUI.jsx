@@ -85,7 +85,10 @@ class ScreenFirebaseUI extends Component {
             <Button
                 variant={`contained`}
                 color={`primary`}
-                onClick={() => firebase.auth().signOut()}>
+                onClick={() => {
+                  firebase.auth().signOut();
+                  window.location.assign(`/`);
+                }}>
                     Logout {firebase.auth().currentUser.displayName}
             </Button>
         </div>

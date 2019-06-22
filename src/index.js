@@ -36,9 +36,9 @@ window.$docsify = {
 ReactDOM.render(
     <Provider store={store}>
         <PersistGate
-        loading={null}
-        persistor={persistor}>
-        <Docsify />
+            loading={null}
+            persistor={persistor}>
+            <Docsify />
         </PersistGate>
     </Provider>
 , document.getElementById('docsify-react'));

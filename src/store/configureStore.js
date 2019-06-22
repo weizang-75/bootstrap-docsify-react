@@ -8,7 +8,7 @@ import reducers from './reducers';
 import rootSaga from './sagas/index';
 
 const persistConfig = {
-  key: "docsify",
+  key: "docsify-react",
   storage
 };
 

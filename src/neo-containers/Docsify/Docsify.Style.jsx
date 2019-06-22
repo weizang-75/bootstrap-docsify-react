@@ -15,5 +15,8 @@ export const styles = theme => ({
     authUI:{
         margin: 'auto',
         maxWidth: 360,
+        border: 'none',
+        borderRadius: 'none',
+        boxShadow: 'none'
     }
 });

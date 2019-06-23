@@ -13,8 +13,8 @@ _probably_ where you'll find the file.
 alias cl="clear"
 alias l="clear && ls -la"
 alias g="clear && git branch && git status"
-alias docs="clear && cd ~/Desktop/START/docsify-react && yarn start"
+alias docs="clear && cd ~/<path>/docsify-react && yarn start"
 alias s="clear && cd ~/Desktop/START && clear && ls -la"
-alias dev="clear && cd ~/Desktop/START/rex-core-product/rex-dev-env && ./rex start"
-alias r="clear && cd ~/Desktop/START/rex-core-product/rex-app && clear && ls -la"
+alias dev="clear && cd ~/<path>/rex-dev-env && ./rex start"
+alias r="clear && cd ~/<path>/rex-app && clear && ls -la"
 ```

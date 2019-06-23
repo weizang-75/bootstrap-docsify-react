@@ -1,5 +1,11 @@
 ## Docsify React
 
+## Developer Docs 
+
+- [Squashing commits](./md/git_rebase_interactive.md)
+- [Terminal commands](./md/terminal_commands.md)
+- [:alien: Emojis](./md/emojis.md)
+
 ### What is this project about?
 
 > #### Docsify React 
@@ -51,7 +57,3 @@ window.$docsify = {
     colours
 }
 ```
-
-## Developer Docs 
-- [Squashing commits](./md/git_rebase_interactive.md)
-- [Terminal commands](./md/terminal_commands.md)

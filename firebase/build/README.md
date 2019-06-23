@@ -1,8 +1,14 @@
-## Docsify React
+## README.md
+
+## Developer Docs 
+
+- [Squashing commits](./md/git_rebase_interactive.md)
+- [Terminal commands](./md/terminal_commands.md)
+- [:dog: Emojis](./md/emojis.md)
 
 ### What is this project about?
 
-> #### Docsify React 
+> #### Docsify React Aims
 We need to quickly create, update and share excellent documentation in Markdown. 
 There are many zillions of options from confluence to github pages. All are good and 
 also bad. This is another one.
@@ -51,7 +57,3 @@ window.$docsify = {
     colours
 }
 ```
-
-## Developer Docs 
-- [Squashing commits](./md/git_rebase_interactive.md)
-- [Terminal commands](./md/terminal_commands.md)

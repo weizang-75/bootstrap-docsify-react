@@ -1,7 +1,7 @@
 {
   "name": "docsify-react",
   "version": "0.1.6",
-  "description": "The brilliant docsify with a React wrapper.",
+  "description": "Docsify with a React wrapper & Firebase deployment.",
   "license": "OSL-3.0",
   "author": {
     "name": "listingslab",

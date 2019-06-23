@@ -92,7 +92,7 @@ class ScreenFirebaseUI extends Component {
       return (
         <div className={cn(classes.authUI)}>
             <Button
-                variant={`contained`}
+                variant={`outlined`}
                 color={`primary`}
                 onClick={() => {
                   firebase.auth().signOut();

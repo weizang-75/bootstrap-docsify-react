@@ -2,6 +2,7 @@
 
 ## Developer Docs 
 
+- [:fire: Firebase](./md/firebase.md)
 - [Squashing commits](./md/git_rebase_interactive.md)
 - [Terminal commands](./md/terminal_commands.md)
 - [:dog: Emojis](./md/emojis.md)

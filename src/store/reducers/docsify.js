@@ -3,7 +3,7 @@ const initialState = {
     docsifyObj: {
         authed: false,
         authTitle: `Restricted Content`,
-        authInstruction: `Sign in with any syndicated provider`,
+        authInstruction: `Sign in with Google`,
         user: null,
     }
 };

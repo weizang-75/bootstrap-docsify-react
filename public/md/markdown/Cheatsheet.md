@@ -1,12 +1,13 @@
-### [Home](../../README.md)
+### [README.md](../../README.md)
 
-## Cheatsheet
+## Markdown Cheatsheet
 
 This is intended as a quick reference and showcase. For more complete info, see [John Gruber's original spec](http://daringfireball.net/projects/markdown/) and the [Github-flavored Markdown info page](http://github.github.com/github-flavored-markdown/).
 
 Note that there is also a [Cheatsheet specific to Markdown Here](./Markdown-Here-Cheatsheet) if that's what you're looking for. You can also check out [more Markdown tools](./Other-Markdown-Tools).
 
 ##### Table of Contents  
+
 [Headers](#headers)  
 [Emphasis](#emphasis)  
 [Lists](#lists)  

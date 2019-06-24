@@ -2,7 +2,7 @@ const initialState = {
     updated: Date.now(),
     docsifyObj: {
         authed: false,
-        authTitle: `Restricted Content`,
+        authTitle: `Content Restricted`,
         authInstruction: `Sign in with Google`,
         user: null,
     }

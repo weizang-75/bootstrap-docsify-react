@@ -2,7 +2,7 @@
 /* http://mcg.mbitson.com */
 
 export const primary = {
-    main: '#abd4d8',
+    main: '#203c51',
 };
 
 export default primary;

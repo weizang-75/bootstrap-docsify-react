@@ -29,7 +29,7 @@ window.$docsify = {
     auto2top   : true,
     maxLevel   : 3, 
     subMaxLevel: 3,
-    themeColor: colours.colour1,
+    themeColor: colours.colour3,
     colours
 }
 

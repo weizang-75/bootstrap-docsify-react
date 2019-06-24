@@ -36,11 +36,30 @@ Now we can stop the module being locked and the Menu item is now shown.
 
 ### Knockout View
 
-The __paywallKey__ attribute is also present in the data that the knockout view `application/views/templates/admin-shell.html` uses to actually render the menu, so we create a condition in that knockout code which adds the upgrade icon to the link and sets the href property to a new paywall view, passing the value of paywallKey so we can present the right copy for that feature.
+The __paywallKey__ attribute is also present in the data that the knockout view `application/views/templates/admin-shell.html` uses to actually render the menu, so we create a condition in that knockout code which adds the upgrade icon to the menu link.
+
+The condition which shows the Leads module lives in the Leads view `application/views/screens/admin/settings/leads/view.php`. If the user does not have rights to view the module, 
+the paywall HTML snippet is required from the shared folder (to make it reusable).
+
+```php
+<div data-bind="ifNotRights:'addon.leads && admin_application.access_section'">
+    <?php require(dirname(__FILE__)."/../../../../_shared/paywall.php"); ?>
+</div>
+```
 
 ### CSS
 
-Add the sparkle graphic to the menu.
+Add the sparkle graphic to the menu is done `public/assets/css/view-settings.css` bacause 
+we need to show a different sparkle colour according to whether the menu item is active.
+
+Experiments showed the simplest & most rebust way to do this is to create a fixed size div 
+with our svg icon as a background.
+
+```css
+div.menu-region ul.menu li.menu-item .sparkle {
+  background-image: url("/assets/images/paywall/sparkle_dark.svg");
+}
+```
 
 ## QA
 
@@ -66,6 +85,7 @@ yarn start
     - Navigate to `Advanced -> Settings`
     - You should see a sparkle icon next to the Leads menu item.  
     ![leads sparkled](https://user-images.githubusercontent.com/370513/59813967-e6ca5100-9356-11e9-9f5d-11d70ae32fd8.png)
+    - The sparkle should be dark when Leads is not selected, and white when it is. 
     - Click `Leads`
     - You should see the paywall screen with relevant text  
     ![leads_example](https://user-images.githubusercontent.com/370513/59730902-730d4300-9287-11e9-9ba2-d00ac94f4e11.png)
@@ -83,12 +103,17 @@ yarn start
 ## Checklist
 
 - [x] I have squashed irrelevant commits
-- [x] ESLint tests pass locally with my changes
-- [x] I have added necessary documentation (if appropriate)
+- [x] I have added necessary documentation
 - [x] I have rebased onto develop
 - [x] I have tested all relevant workflows locally
 
 ## Further comments
+
+Before QA, I need to confirm with UX Team exactly what the call to actions and 
+text for the paywall screen should be. I think that will be: 
+
+- Learn more: navigates app to a new url?
+- Contact Support: opens the same Contact dialog as clicking ? -> Contact Support Team
 
 This is the first PR of a set which will cover all paywall features. 
 The intention is to raise a separate PR for each of these on top og this work. 

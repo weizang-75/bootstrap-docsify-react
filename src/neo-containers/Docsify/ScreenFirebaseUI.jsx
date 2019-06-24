@@ -8,10 +8,11 @@ import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 import firebase from 'firebase/app';
 import 'firebase/auth';
 import {
+    Avatar,
     Button,
     Card,
     CardContent,
-    // CardHeader,
+    Grid,
     // IconButton,
     Typography,
 } from '@material-ui/core/';
@@ -89,8 +90,17 @@ class ScreenFirebaseUI extends Component {
           </Card>
         );
       }
+      const {
+        photoURL,
+        displayName,
+      } = firebase.auth().currentUser;
+
       return (
-        <div className={cn(classes.authUI)}>
+        <Grid container spacing={4} className={cn(classes.loggedIn)}>
+          <Grid item>
+            <Avatar src={photoURL} />
+          </Grid>
+          <Grid item>
             <Button
                 variant={`outlined`}
                 color={`primary`}
@@ -98,9 +108,10 @@ class ScreenFirebaseUI extends Component {
                   firebase.auth().signOut();
                   window.location.assign(`/`);
                 }}>
-                    Logout {firebase.auth().currentUser.displayName}
+                    Logout {displayName}
             </Button>
-        </div>
+          </Grid>
+        </Grid>
       );
     }
 }
@@ -108,7 +119,6 @@ class ScreenFirebaseUI extends Component {
 const mapStateToProps = (store) => {
 	return {
         docsifyObj: store.docsify.docsifyObj,
-        firebaseConfig: store.top.firebaseConfig,
 	};
 };
 

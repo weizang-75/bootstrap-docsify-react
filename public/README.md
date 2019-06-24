@@ -2,8 +2,8 @@
 
 ## Rex
 
-### [Paywall](./md/Paywall.md)
-### [Land Registry](./md/Land_Registry.md)
+- [Paywall](./md/Paywall.md)
+- [Land Registry](./md/Land_Registry.md)
 
 ## Docsify React
 

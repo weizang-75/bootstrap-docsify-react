@@ -1,8 +1,6 @@
-### [Home](../README.md)
+### [README.md](../README.md)
 
 ## Git Fundamentals
-
-[![Git Fundamentals](../../img/3rd_party/github.png)](https://github.com/rexlabsio)
 
 Quick & easy cut & paste cheat sheet for useful Git terminal commands. 
 
@@ -44,14 +42,14 @@ branch, rebasing is bad. mmmmkay?
 > __merge__   
 Merging basically smashes two branches together and tells you if there are 
 any conflices. It also merges the history.
-[![Rexlabs](../../img/git/merge.png)](https://es.atlassian.com/git/tutorials/using-branches/git-merge) 
+[![merge](https://firebasestorage.googleapis.com/v0/b/docsify-react.appspot.com/o/merge.png?alt=media&token=70cff9d4-57f2-4389-9bb2-5b22a0f58df7)](https://es.atlassian.com/git/tutorials/using-branches/git-merge) 
   
 
 > __rebase__   
 Rebasing literally rewrites history. It will make a note of all your commits, 
 then go back to the base branch and get all the commits that have happened since 
 you branched.
-[![Rexlabs](../../img/git/rebase.png)](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase)
+[![rebase](https://firebasestorage.googleapis.com/v0/b/docsify-react.appspot.com/o/rebase.png?alt=media&token=032f7127-a973-4689-8c38-6bdd223a16a7)](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase)
 
 ### Getting out of trouble
 
@@ -62,7 +60,6 @@ Look at the commit history, find the commit hash
 ```
 git reset <commit-hash>
 ```
-
 
 ### Tips & tweaks
 
@@ -85,5 +82,3 @@ Be specific about your rebasing branches
 ```git rebase -onto <target-branch> <current-branch>```  
 
 ~ Tilda in Git kind of means distance from now
-
-[![Rexlabs](../../img/rex/rex_ribbon_logo_black.png)](./rexlabs/index.md)  

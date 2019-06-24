@@ -1,4 +1,4 @@
-### [Home](../README.md)
+### [README.md](../README.md)
 
 ## Custom Terminal commands
 

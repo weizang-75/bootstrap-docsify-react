@@ -1,5 +1,6 @@
+### [README.md](../README.md)
 
-## Git Rebase Interactive
+## Git Rebase Interactive (Squashing Commits)
 
 ## Create a single commit 
 

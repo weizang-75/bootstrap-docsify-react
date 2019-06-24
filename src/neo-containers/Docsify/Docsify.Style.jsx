@@ -3,13 +3,7 @@ import commonStyles from "../../theme/commonStyles";
 
 export const styles = theme => ({
     ...commonStyles(theme),
-    docsify: {
-        maxWidth: 700,
-        margin: 'auto',
-        padding: theme.spacing(),
-    },
     screenFirebaseUI:{
-        // border: '1px solid red',
         margin: theme.spacing(),
     },
     authUI:{
@@ -19,6 +13,11 @@ export const styles = theme => ({
         borderRadius: 'none',
         boxShadow: 'none',
         paddingTop: theme.spacing(3),
+        textAlign: 'center',
+    },
+    loggedIn: {
+        margin: 'auto',
+        maxWidth: 360,
         textAlign: 'center',
     }
 });

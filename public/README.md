@@ -11,9 +11,8 @@
 - Pull Request 3 -->
 
 ## In Review
-- [:floppy_disk: #1201 [QA]](./md/rex/gh/1201.md)  
-    - [QA](./md/rex/gh/1201_QA.md)
-- [:floppy_disk: #1183 [CR]](./md/rex/gh/1183.md)
+[:floppy_disk: #1183 [CR]](./md/rex/gh/1183.md)
+[:floppy_disk: #1201 [approved]](./md/rex/gh/1201.md)  
 
 
 # @listingslab

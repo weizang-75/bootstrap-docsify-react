@@ -1,40 +1,37 @@
-## [@listingslab](./md/listingslab/listingslab.md)
 
-### PWA
+# @rexlabs
 
-- [Docsify React](./md/listingslab/Docsify_React.md)
-- [Agile PWA](https://agile-pwa.listingslab.com)
-- [GPX Replay](https://gpx-replay.com)
+- [:rainbow: About Rex](https://www.rexlabs.io/)
 
-## [@rexlabs](https://github.com/rexlabsio)
-
-### Current WIP
+## WIP
 
 > [Land Registry](./md/rex/Land_Registry/Land_Registry.md)  
-- Pull Request 1
+<!-- - Pull Request 1
 - Pull Request 2
-- Pull Request 3
+- Pull Request 3 -->
 
-### Still in progress
-
-> [[IN_REVIEW] Paywall Leads #1183](./md/Paywall.md)
-
-## Dev Skool
-
-- [:notebook: Get Started](./md/skool/tutorial/Get_Started.md)
-- [:fire: Firebase](./md/skool/Firebase.md)
-- [:video_game: Terminal](./md/skool/Terminal.md)
-
-### [Markdown](./md/skool/markdown/Markdown_Cheatsheet.md)
-
-- [:grin: Emojis](./md/skool/markdown/Emojis.md)
-
-### [Git](./md/skool/git/git_fundamentals.md)
-
-- [Squashing commits (rebase -i)](./md/skool/git/git_rebase_interactive.md)
-- [Git Fundamentals](./md/skool/git/git_fundamentals.md)
+## In Review
+- [:floppy_disk: #1201 [QA]](./md/rex/gh/1201.md)  
+    - [QA](./md/rex/gh/1201_QA.md)
+- [:floppy_disk: #1183 [CR]](./md/rex/gh/1183.md)
 
 
-<!-- ## [About Docsify React](./md/skool/Docsify_React.md) -->
+# @listingslab
+[:rainbow:  About listingslab](./md/listingslab/listingslab.md)
 
+## Apps
+[:rocket: Docsify React](./md/listingslab/Docsify_React.md)  
+[:rocket: Agile PWA](https://agile-pwa.listingslab.com)  
+[:rocket: GPX Replay](https://gpx-replay.com)  
 
+# @skool
+[:notebook: Get Started](./md/skool/tutorial/Get_Started.md)  
+[:fire: Firebase](./md/skool/Firebase.md)  
+[:computer: Terminal](./md/skool/Terminal.md)  
+
+## [Git](./md/skool/git/git_fundamentals.md)
+[:octopus: Squashing commits (rebase -i)](./md/skool/git/git_rebase_interactive.md)  
+[:octopus: Git Fundamentals](./md/skool/git/git_fundamentals.md)  
+
+## [Markdown](./md/skool/markdown/Markdown_Cheatsheet.md)
+[:grin: Emojis](./md/skool/markdown/Emojis.md)  

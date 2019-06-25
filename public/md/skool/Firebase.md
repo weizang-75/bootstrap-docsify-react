@@ -1,6 +1,9 @@
-### [README.md](../README.md)
+
+### [Home](../README.md)
 
 ## Firebase
+
+[![Firebase Console](https://firebasestorage.googleapis.com/v0/b/docsify-react.appspot.com/o/firebase.png?alt=media&token=f886eb14-2051-4b87-8286-ef804fe6ffa4)](https://console.firebase.google.com)
 
 ### Why Firebase?
 
@@ -55,5 +58,3 @@ This is what the following terms mean in the context of this dowcument
 > An __Environment__ is an individual Firebase project  
 A __Project__ is the name Firebase uses.  
 An __.env file__ is one which does not get tracked in the repo
-
-[![Firebase Console](https://firebasestorage.googleapis.com/v0/b/docsify-react.appspot.com/o/firebase.png?alt=media&token=f886eb14-2051-4b87-8286-ef804fe6ffa4)](https://console.firebase.google.com)

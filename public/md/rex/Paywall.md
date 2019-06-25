@@ -1,5 +1,5 @@
 
-### [README.md](../README.md)
+### [Home](../README.md)
 
 # [WIP] Paywall Leads #1183
 

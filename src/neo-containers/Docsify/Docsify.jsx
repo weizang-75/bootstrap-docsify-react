@@ -19,8 +19,6 @@ class Docsify extends Component {
         docsifyScript['data-name'] = `docsifyScript`;
         docsifyScript.async = true;
         document.body.appendChild(docsifyScript);
-
-        
     }
 
     render (){

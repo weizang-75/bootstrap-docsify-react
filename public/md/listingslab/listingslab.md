@@ -1,4 +1,6 @@
-# @listingslab
+### [Home](/)
+
+## @listingslab
 
 ### About us
 
@@ -15,6 +17,7 @@ in Brisbane as a React Developer. He also does other things.
 
 ## Services
 
+- React/JavaScript
 - WordPress
 - LAMP Hosting
 - Custom Service Mashup

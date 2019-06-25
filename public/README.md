@@ -3,13 +3,13 @@
 
 [:deciduous_tree: About Rex](https://www.rexlabs.io/)
 
-## WIP
-> [Land Registry](md/rex/Land_Registry/Land_Registry.md)  
+## Work In Progress
+> [Land Registry](md/rexlabs/Land_Registry/Land_Registry.md)  
 - Pull Request 1
 
 ## Review Process
-[:floppy_disk: #1183 [CR]](md/rex/gh/1183.md)  
-[:floppy_disk: #1201 [approved]](md/rex/gh/1201.md)  
+[:floppy_disk: #1183 [CR]](md/rexlabs/gh/1183.md)  
+[:floppy_disk: #1201 [approved]](md/rexlabs/gh/1201.md)  
 
 
 # @listingslab

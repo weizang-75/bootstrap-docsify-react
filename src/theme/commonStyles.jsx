@@ -1,13 +1,17 @@
 
 export default theme => ({
   app:{
-    flexGrow: 1,
-    maxWidth: 700,
-    padding: theme.spacing(3),
-    margin: `auto`,
+    // flexGrow: 1,
+    // maxWidth: 700,
+    padding: theme.spacing(1),
+    // margin: `auto`,
     background: 'black',
     color: 'white',
     // textAlign: 'center',
+    position: 'fixed',
+    right: 100,
+    top: theme.spacing(1),
+    zIndex: 20000,
   },
   hundredHigh: {
     minHeight: '100vh',

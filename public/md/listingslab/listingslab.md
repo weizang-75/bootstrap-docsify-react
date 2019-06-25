@@ -6,8 +6,6 @@ Listingslab === Chris Dorward. He started writing JavaScript when it was
 disguised as ActionScript in the 1990s. He currently  works at Rexlabs 
 in Brisbane as a React Developer. He also does other things.
 
-![Git Account](../../img/listingslab/git-account.png)
-
 - [Github](https://github.com/listingslab)
 - [Linkedin](https://www.linkedin.com/in/listingslab/)
 - [Facebook](https://www.facebook.com/listingslabspage/)

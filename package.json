@@ -1,6 +1,6 @@
 {
   "name": "docsify-react",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Docsify with a React wrapper & Firebase deployment.",
   "license": "OSL-3.0",
   "author": {

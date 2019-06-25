@@ -11,6 +11,8 @@ import { Provider } from 'react-redux';
 
 console.log(`${packageJSON.name} ${packageJSON.version} (${process.env.REACT_APP_ENV})`);
 
+
+
 const store = configureStore();
 const getStore = () => { return store; };
 export { getStore };

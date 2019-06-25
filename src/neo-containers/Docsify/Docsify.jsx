@@ -9,11 +9,15 @@ import {
     MuiThemeProvider, 
     createMuiTheme 
 } from '@material-ui/core/styles';
-import ScreenFirebaseUI from './ScreenFirebaseUI';
+// import ScreenFirebaseUI from './ScreenFirebaseUI';
 
 class Docsify extends Component {
 
-    runDocsify = (e) => {
+    componentDidMount () {
+        this.runDocsify ();
+    }
+
+    runDocsify = () => {
         const docsifyScript = document.createElement(`script`);
         docsifyScript.src = `//unpkg.com/docsify/lib/docsify.min.js`;
         docsifyScript['data-name'] = `docsifyScript`;
@@ -23,17 +27,21 @@ class Docsify extends Component {
 
     render (){
         const theme = createMuiTheme( muiTheme );
-        console.log('script', document.currentScript);
+        // console.log('script', document.currentScript);
         return (
             <MuiThemeProvider theme={theme}>
-                <ScreenFirebaseUI 
-                    runDocsify={this.runDocsify} 
-                    docsifyScript={this.docsifyScript}
-                />
+                hello
             </MuiThemeProvider>
         );
     }
 }
+
+/*
+<ScreenFirebaseUI 
+    runDocsify={this.runDocsify} 
+    docsifyScript={this.docsifyScript}
+/>
+*/
 
 const mapStateToProps = (store) => {
 	return {

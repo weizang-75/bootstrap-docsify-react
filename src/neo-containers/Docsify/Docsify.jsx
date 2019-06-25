@@ -16,7 +16,6 @@ class Docsify extends Component {
 
     componentDidMount () {
         this.runDocsify ();
-        console.log (this.props.history.location.hash);
     }
 
     runDocsify = () => {

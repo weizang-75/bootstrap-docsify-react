@@ -16,15 +16,24 @@
         minimum-scale=1.0"
     >
     <link rel="stylesheet" href="https://unpkg.com/docsify-themeable/dist/css/theme-simple.css">
-    <script>
-      window.docsifyReact = {
-        bypassAuth: true,
-      }
-    </script>
   </head>
   <body>
-    
-    <div id="app"></div>
     <div id="docsify-react"></div>
+    <div id="app"></div>
+    <script>
+      window.accessRestrictions = { 
+        restricted: false,
+      };
+      window.restrictAccess = function (restrictions) {
+        if (restrictions){
+          // const renderedDocsify = document.querySelector('main');
+          // renderedDocsify.parentNode.removeChild(renderedDocsify);
+          window.accessRestrictions = { 
+            restricted: true,
+            restrictions,
+          };
+        }
+      }
+    </script>
   </body>
 </html>

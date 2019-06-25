@@ -33,7 +33,8 @@ window.$docsify = {
     maxLevel   : 3, 
     subMaxLevel: 3,
     themeColor: colours.colour3,
-    colours
+    colours,
+    executeScript: true
 }
 
 ReactDOM.render(

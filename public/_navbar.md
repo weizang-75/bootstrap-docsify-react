@@ -1,4 +1,4 @@
 - Navbar
-  - [:home: Home](/)
+  - [:house: Home](/)
   - [:uk: English](/)
   - [:cn: 中文](/zh-cn/)

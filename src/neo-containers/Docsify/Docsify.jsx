@@ -14,8 +14,36 @@ import {
 
 class Docsify extends Component {
 
-    componentDidMount () {
-        this.runDocsify ();
+    state = {
+        hasMounted: false,
+        hash: this.props.history.location.hash,
+    }
+
+    componentDidMount(){
+        console.log ('[componentWillMount]');
+        const { hash } = this.props.history.location;
+        this.setState({ 
+            hasMounted: true, 
+            firstHash: hash,
+            hash 
+        });
+        this.runDocsify();
+    }
+
+    componentDidUpdate () {
+        const { 
+            hasMounted 
+        } = this.state;
+        const { 
+            hash
+        } = this.props.history.location;
+        if (hasMounted){
+            console.log ('[OK, STOP.]', hash, this.state.hash);
+            if ( this.state.hash !== hash){
+                console.log ('[PAGE CHANGE]');
+            };
+            
+        }        
     }
 
     runDocsify = () => {

@@ -1,5 +1,5 @@
 
-### [Home](../README.md)
+### [Home](/)
 
 ## Git Rebase Interactive (Squashing Commits)
 

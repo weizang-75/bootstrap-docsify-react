@@ -5,6 +5,7 @@ import muiTheme from '../../theme/mui';
 import { withStyles } from '@material-ui/core/styles';
 import { styles } from './Docsify.Style';
 // import cn from 'classnames';
+import { withRouter } from "react-router";
 import { 
     MuiThemeProvider, 
     createMuiTheme 
@@ -15,6 +16,7 @@ class Docsify extends Component {
 
     componentDidMount () {
         this.runDocsify ();
+        console.log (this.props.history.location.hash);
     }
 
     runDocsify = () => {
@@ -25,12 +27,19 @@ class Docsify extends Component {
         document.body.appendChild(docsifyScript);
     }
 
+    stopDocsify = () => {
+        console.log('stopDocsify');
+    }
+
     render (){
         const theme = createMuiTheme( muiTheme );
+        const { classes } = this.props;
         // console.log('script', document.currentScript);
         return (
             <MuiThemeProvider theme={theme}>
-                hello
+                <div className={classes.app}>
+                    {this.props.history.location.hash}
+                </div>
             </MuiThemeProvider>
         );
     }
@@ -50,5 +59,5 @@ const mapStateToProps = (store) => {
 };
 
 export default (
-	connect(mapStateToProps, null)(withStyles(styles, { withTheme: true })(Docsify))
+	connect(mapStateToProps, null)(withStyles(styles, { withTheme: true })(withRouter(Docsify)))
 );

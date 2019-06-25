@@ -1,5 +1,5 @@
 
-### [Home](../README.md)
+### [Home](/)
 
 ## Get Started
 

@@ -1,4 +1,5 @@
-### [Home](../README.md)
+
+### [Home](/)
 
 ## Docsify React
 

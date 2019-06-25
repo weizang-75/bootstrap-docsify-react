@@ -2,8 +2,12 @@
 export default theme => ({
   app:{
     flexGrow: 1,
-    maxWidth: 500,
+    maxWidth: 700,
+    padding: theme.spacing(3),
     margin: `auto`,
+    background: 'black',
+    color: 'white',
+    // textAlign: 'center',
   },
   hundredHigh: {
     minHeight: '100vh',

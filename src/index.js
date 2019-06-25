@@ -2,6 +2,7 @@
 import packageJSON from "../package.json";
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from "react-router-dom";
 import { Docsify } from './neo-containers';
 import * as serviceWorker from './serviceWorker';
 import { configureStore } from './store/configureStore';
@@ -40,7 +41,9 @@ ReactDOM.render(
         <PersistGate
             loading={null}
             persistor={persistor}>
-            <Docsify />
+                <Router>
+                    <Docsify />
+                </Router>
         </PersistGate>
     </Provider>
 , document.getElementById('docsify-react'));

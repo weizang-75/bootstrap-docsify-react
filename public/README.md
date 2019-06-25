@@ -27,6 +27,8 @@ Provide the ability for Rex users in the UK to be able to activate an integratio
 [:seedling: About listingslab](md/listingslab/listingslab.md)
  
 ## Apps 
+- https://listingslab.com/
+- [:school: listingslab.com](https://listingslab.com)
 - [:house_with_garden: Agile PWA](https://agile-pwa.listingslab.com)
 - [:watch: GPX Replay](https://gpx-replay.com)
 - [:book: Docsify React](md/listingslab/Docsify_React.md)

@@ -44,7 +44,7 @@ Provide the ability for Rex users in the UK to be able to activate an integratio
 - [:star2: Google](https://www.google.com/search?q=listingslab)
 
 # @skool
-- [:notebook: Install](md/skool/tutorial/Get_Started.md)
+- [:notebook: Install](md/skool/Install.md)
 - [:dog: Markdown](md/skool/markdown/Markdown_Cheatsheet.md)
 - [:fire: Firebase](md/skool/Firebase.md)
 - [:computer: Terminal](md/skool/Terminal.md)

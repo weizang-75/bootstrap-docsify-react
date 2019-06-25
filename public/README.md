@@ -5,7 +5,10 @@
 
 ## Work In Progress
 > [Land Registry](md/rexlabs/Land_Registry/Land_Registry.md)  
-- Pull Request 1
+- [Links](md/rexlabs/Land_Registry/Links.md)
+- [Integration Settings](md/rexlabs/Land_Registry/Integration_Settings.md)
+- [Importing Bulk Sales History](md/rexlabs/Land_Registry/Importing_Bulk_Sales_History.md)
+- [Manage Sales History Per Listing](md/rexlabs/Land_Registry/Manage_Sales_History_Per_Listing.md)
 
 ## Review Process
 [:floppy_disk: #1183 [CR]](md/rexlabs/gh/1183.md)  

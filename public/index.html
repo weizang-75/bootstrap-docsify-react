@@ -16,26 +16,19 @@
         minimum-scale=1.0"
     >
     <link rel="stylesheet" href="https://unpkg.com/docsify-themeable/dist/css/theme-simple.css">
+    <style>
+      .restricted {
+        border: 10px solid red;
+        background: black;
+        /* visibility: hidden; */
+      }
+    </style>
   </head>
   <body>
     <div id="docsify-react"></div>
     <div id="docsify">
       <div id="app"></div>
+      <div style-"clear: both;"></div>
     </div>
-    
-    <script>
-      window.accessRestrictions = { 
-        restricted: false,
-      };
-      window.restrictAccess = function (restrictions) {
-        if (restrictions){
-          console.log ('restrictAccess');
-          window.accessRestrictions = { 
-            restricted: true,
-            restrictions,
-          };
-        }
-      }
-    </script>
   </body>
 </html>

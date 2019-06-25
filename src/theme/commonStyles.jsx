@@ -2,12 +2,11 @@
 export default theme => ({
   app:{
     padding: theme.spacing(1),
-    background: 'black',
-    color: 'white',
+    background: 'white',
+    color: 'black',
     position: 'fixed',
     right: 200,
-    top: theme.spacing(1),
-    zIndex: 20000,
+    top: 0
   },
   hundredHigh: {
     minHeight: '100vh',

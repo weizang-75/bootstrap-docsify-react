@@ -1,5 +1,3 @@
-### [Home](/)
-
 ## @listingslab
 
 ### About us
@@ -15,7 +13,7 @@ in Brisbane as a React Developer. He also does other things.
 - [Google](https://www.google.com/search?q=listingslab)
 
 
-## Services
+### Services
 
 - React/JavaScript
 - WordPress

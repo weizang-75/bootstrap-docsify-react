@@ -1,7 +1,6 @@
+## Docsify React
 
-### [Home](/)
-
-### About Docsify
+## About Docsify
 
 Docsify is a Vue app which magically creates amazin docs from well-formatted markdown. 
 If you learn how to write markdown in the way which looks good in docsify, which is easy 
@@ -10,7 +9,7 @@ any other platform supporting markdown. We love markdown.
 
 [![docsfiy](https://firebasestorage.googleapis.com/v0/b/docsify-react.appspot.com/o/docsify.jpg?alt=media&token=c1c0524c-8fbe-431a-9fdb-5a3c5b038313)](https://docsify.js.org/#/?id=docsify)
 
-## Docsify React
+### Docsify React
 
 > #### Aim of Docsify React Aims
 We need to quickly create, update and share excellent documentation in Markdown. 
@@ -28,7 +27,7 @@ also bad. This is another one.
 - Should work nicely with GitHub
 - Should have the ability to place content behind Authentication
 
-### Installing Docsify
+### Try Docsify
 
 Load docsify vue app into your SPA's html
 

@@ -4,7 +4,7 @@
 [:deciduous_tree: About Rex](https://www.rexlabs.io/)
 
 ## Work In Progress
-> [Land Registry](md/rexlabs/Land_Registry/Land_Registry.md)  
+> ### [Land Registry](md/rexlabs/Land_Registry/Land_Registry.md)  
 We want to provide the ability for Rex users in the UK to be able to activate an integration, allowing them to pull sales history to their properties, in bulk and individually.
 
 - [UX Doc: Rex UK - Land Registry Integration](https://docs.google.com/document/d/1OqpiBrKFJcKu4VwY-akVB4J79A6_1ZlgR_tLZoYC8BU/edit#heading=h.yduvmhvc306d)

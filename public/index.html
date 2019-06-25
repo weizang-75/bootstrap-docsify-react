@@ -19,15 +19,17 @@
   </head>
   <body>
     <div id="docsify-react"></div>
-    <div id="app"></div>
+    <div id="docsify">
+      <div id="app"></div>
+    </div>
+    
     <script>
       window.accessRestrictions = { 
         restricted: false,
       };
       window.restrictAccess = function (restrictions) {
         if (restrictions){
-          // const renderedDocsify = document.querySelector('main');
-          // renderedDocsify.parentNode.removeChild(renderedDocsify);
+          console.log ('restrictAccess');
           window.accessRestrictions = { 
             restricted: true,
             restrictions,

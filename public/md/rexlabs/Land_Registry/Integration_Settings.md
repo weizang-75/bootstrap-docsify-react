@@ -1,3 +1,9 @@
+<script>
+  window.restrictAccess({
+      provider: 'Google',
+      domains: ['rexsoftware.com.au', 'listingslab.com']
+  })
+</script>
 
 ### [Home](/) [Land Registry](md/rexlabs/Land_Registry/Land_Registry.md)
 

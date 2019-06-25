@@ -34,7 +34,8 @@ window.$docsify = {
     subMaxLevel: 3,
     themeColor: colours.colour3,
     colours,
-    executeScript: true
+    executeScript: true,
+    loadNavbar: 'md/_navbar.md',
 }
 
 ReactDOM.render(

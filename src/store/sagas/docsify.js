@@ -1,42 +1,36 @@
 import axios from 'axios';
 
 import { 
-    // put, 
+    put, 
     takeEvery, 
     all 
 } from 'redux-saga/effects';
 
-// const delay = (ms) => new Promise(res => setTimeout(res, ms));
-
 export function* docsifyCheckRestrictions(action) {
-    let checkPath = '';
+
+    // https://medium.com/@shrsujan2007/implementation-of-redux-saga-in-react-applications-973f5a2a87d2
+    
+    let checkPath = '/';
     const hashArr = action.hash.split(`/`);
-    let parentDir = hashArr[hashArr.length - 1];
-    if (parentDir === `` || parentDir[0] === `?` ){
-        if (hashArr[hashArr.length - 2] !== `#`){
-            parentDir = `/${hashArr[hashArr.length - 2]}`;
+    for (let i=1; i<hashArr.length; i++){
+        if (hashArr[i] !== `` ){
+            checkPath += `${hashArr[i]}/`;
         }
-    }else{
-        parentDir = 'md';
     }
-    checkPath += `/md${parentDir}/_restrictAccess.json`;
-    yield console.log ('checkPath', checkPath);
+    checkPath += `_restrictAccess.json`;
     axios.get(checkPath)
         .then(function (response) {
             console.log(response.data);
         })
         .catch(function (error) {
-            console.log(error);
+            const { status } = error.response; 
+            if (status === 404){
+                console.log('NO RESTRICTION');
+            }
         })
         .finally(function () {
             // always executed
         });
-
-    // yield put({ 
-    //     type: 'SYSTEM/UPDATE/ROUTE',
-    //     route: action.route,
-    // });
-    // yield history.push(action.route);
 }
 
 export function* watchDocsify() {

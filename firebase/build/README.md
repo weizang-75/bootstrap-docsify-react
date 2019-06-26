@@ -4,7 +4,7 @@
 
 [![Paywall](https://firebasestorage.googleapis.com/v0/b/docsify-react.appspot.com/o/Land%20Registry%2Fpaywall.jpg?alt=media&token=7d07568a-559a-4403-9c64-70a40344138d)](md/rexlabs/)
 
-## [@listingslab](md/listingslab/listingslab.md)
+## [@listingslab](md/listingslab/)
  
 ### Apps 
 - [:school: listingslab.com](https://listingslab.com)
@@ -30,6 +30,7 @@
 - [:aerial_tramway: Special Docsify Markdown](md/skool/markdown/Special_Docsify_Markdown.md)
 - [:fire: Firebase](md/skool/Firebase.md)
 - [:computer: Terminal](md/skool/Terminal.md)
+- [:computer: Console](md/skool/Console.md)
 - [:octopus: Squashing commits (rebase -i)](md/skool/git/git_rebase_interactive.md)
 - [:octopus: Git Fundamentals](md/skool/git/git_fundamentals.md)
 - [:grin: Emojis](md/skool/markdown/Emojis.md)

@@ -1,9 +1,9 @@
 import axios from 'axios';
 
 import { 
-    put, 
+    // put, 
     takeEvery, 
-    all 
+    all
 } from 'redux-saga/effects';
 
 export function* docsifyCheckRestrictions(action) {
@@ -31,6 +31,7 @@ export function* docsifyCheckRestrictions(action) {
         .finally(function () {
             // always executed
         });
+    yield console.log('ok');
 }
 
 export function* watchDocsify() {

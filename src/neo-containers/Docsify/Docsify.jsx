@@ -11,7 +11,7 @@ import {
     createMuiTheme 
 } from '@material-ui/core/styles';
 // import ScreenFirebaseUI from './ScreenFirebaseUI';
-
+import { FullscreenDialog } from '../index';
 import dispatchAction from '../../store/dispatchAction';
 
 class Docsify extends Component {
@@ -67,23 +67,15 @@ class Docsify extends Component {
     render (){
         const theme = createMuiTheme( muiTheme );
         const { classes } = this.props;
-        // console.log('script', document.currentScript);
         return (
             <MuiThemeProvider theme={theme}>
                 <div className={classes.app}>
-                    {/* {this.props.history.location.hash} */}
+                    <FullscreenDialog />
                 </div>
             </MuiThemeProvider>
         );
     }
 }
-
-/*
-<ScreenFirebaseUI 
-    runDocsify={this.runDocsify} 
-    docsifyScript={this.docsifyScript}
-/>
-*/
 
 const mapStateToProps = (store) => {
 	return {

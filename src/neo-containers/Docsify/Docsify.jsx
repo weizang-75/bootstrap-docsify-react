@@ -65,7 +65,7 @@ class Docsify extends Component {
         return (
             <MuiThemeProvider theme={theme}>
                 <div className={classes.app}>
-                    {this.props.history.location.hash}
+                    {/* {this.props.history.location.hash} */}
                 </div>
             </MuiThemeProvider>
         );

@@ -1,2 +1,0 @@
-
-## Rex Core Product

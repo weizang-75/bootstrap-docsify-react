@@ -1,17 +1,17 @@
 const initialState = {
     updated: Date.now(),
-    user: null,
+    restrictions: null,
 };
 
 export default function docsify (state = initialState, action ) {
     switch (action.type) {
 
-        case 'DOCSIFY/USER/UPDATE':
-            console.log('DOCSIFY/USER/UPDATE', state);
+        case 'DOCSIFY/RESTRICTIOINS/UPDATE':
+            // console.log('DOCSIFY/RESTRICTIOINS/UPDATE', action);
             return {
                 ...state,
                 updated: Date.now(),
-                user: action.user,
+                restrictions: action.restrictions,
             };
 
         case 'STARTOVER':

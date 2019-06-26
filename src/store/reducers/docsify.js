@@ -1,6 +1,7 @@
 const initialState = {
     updated: Date.now(),
     user: null,
+    restrictAccess: null,
 };
 
 export default function docsify (state = initialState, action ) {

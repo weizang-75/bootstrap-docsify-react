@@ -6,6 +6,11 @@ import {
     all
 } from 'redux-saga/effects';
 
+export function* docsifyUpdateRestrictions(action) {
+    yield console.log (action);
+}
+
+
 export function* docsifyCheckRestrictions(action) {
 
     // https://medium.com/@shrsujan2007/implementation-of-redux-saga-in-react-applications-973f5a2a87d2
@@ -35,7 +40,8 @@ export function* docsifyCheckRestrictions(action) {
 }
 
 export function* watchDocsify() {
-    yield takeEvery(`DOCSIFY/CHECK/RESTRICTIONS`, docsifyCheckRestrictions);  
+    yield takeEvery(`DOCSIFY/CHECK/RESTRICTIONS`, docsifyCheckRestrictions); 
+    yield takeEvery(`DOCSIFY/RESTRICTIOINS/UPDATE`, docsifyUpdateRestrictions);  
 }
 
 export default function* docsifySaga() {

@@ -24,16 +24,19 @@ class FullscreenDialog extends Component {
 
     render (){
         const { 
-            classes,
-            // store
+            classes
         } = this.props;
-        // console.log ('store', store.auth);
+        const { restrictAccess } = this.props.store.docsify;
+
+        let open = false;
+        
+        console.log ('restrictAccess', restrictAccess);
         return (
             <Dialog
                 aria-label="Dialog"
                 className={cn(classes.newIssue)}
                 fullScreen={this.state.fullScreen}
-                open={this.state.isOpen}
+                open={open}
                 onClose={() => {
                     this.setState({isOpen: false});
                     // dispatchAction({type: `SYSTEM/CLOSE/NEWISSUE`})}

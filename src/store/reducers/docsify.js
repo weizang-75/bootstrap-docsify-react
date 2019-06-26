@@ -2,6 +2,9 @@ const initialState = {
     updated: Date.now(),
     user: null,
     restrictAccess: null,
+    location: {
+        
+    },
 };
 
 export default function docsify (state = initialState, action ) {

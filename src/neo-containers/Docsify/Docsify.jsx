@@ -19,6 +19,7 @@ class Docsify extends Component {
     state = {
         hasMounted: false,
         hash: this.props.history.location.hash,
+        restrictionsChecked: false
     }
 
     componentDidMount(){
@@ -34,18 +35,31 @@ class Docsify extends Component {
 
     componentDidUpdate () {
         const { 
-            hasMounted 
+            hasMounted,
+            restrictionsChecked,
         } = this.state;
         const { 
             hash
         } = this.props.history.location;
+        // console.log ('[restrictionsChecked]', restrictionsChecked);
         if (hasMounted){
-            // console.log ('[OK, STOP.]', hash, this.state.hash);
             if ( this.state.hash !== hash){
-                console.log ('[PAGE CHANGE]');
+                let newLocation = this.props.history.location;
+                dispatchAction ({ 
+                    type: `DOCSIFY/PAGE/CHANGE`, 
+                    newLocation
+                });
             };
-            this.checkRestrictions();
-        }        
+            if (!restrictionsChecked){
+                dispatchAction ({ 
+                    type: `DOCSIFY/CHECK/RESTRICTIONS`, 
+                    hash: this.props.history.location.hash
+                });
+                this.setState({
+                    restrictionsChecked: true,
+                })
+            }
+        }
     }
 
     runDocsify = () => {
@@ -54,14 +68,6 @@ class Docsify extends Component {
         docsifyScript['data-name'] = `docsifyScript`;
         docsifyScript.async = true;
         document.body.appendChild(docsifyScript);
-    }
-
-    checkRestrictions = () => {
-        const { 
-            history 
-        } = this.props;
-        dispatchAction ({ type: `DOCSIFY/CHECK/RESTRICTIONS`, hash: history.location.hash})
-        // console.log ('checkRestrictions', history.location);
     }
 
     render (){

@@ -26,11 +26,11 @@ class FullscreenDialog extends Component {
         const { 
             classes
         } = this.props;
-        const { restrictAccess } = this.props.store.docsify;
+        // const { restrictAccess } = this.props.store.docsify;
 
         let open = false;
         
-        console.log ('restrictAccess', restrictAccess);
+        // console.log ('restrictAccess', restrictAccess);
         return (
             <Dialog
                 aria-label="Dialog"

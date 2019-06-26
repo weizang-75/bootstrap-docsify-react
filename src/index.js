@@ -23,7 +23,7 @@ window.$docsify = {
     name: 'Docsify React',
     repo: 'https://github.com/listingslab-software/docsify-react',
     executeScript: false,
-    loadNavbar: '_navbar.md',
+    // loadNavbar: '_navbar.md',
     auto2top   : true,
     maxLevel   : 3, 
     subMaxLevel: 3,

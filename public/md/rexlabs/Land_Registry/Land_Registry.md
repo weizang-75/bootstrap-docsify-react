@@ -7,15 +7,18 @@ Agents will have more information and knowledge on property sales history, assis
 
 > Branch /rex-app/tree/ `feature/ch30932/land-registry-integration-settings`
 
+### [Integration Settings](md/rexlabs/Land_Registry/Integration_Settings.md)  
+Administrators will be able to turn on the HM Land Registry integration in order to access the Sales History data.
+
+- [Proposed Changes](md/rexlabs/Land_Registry/Proposed_Changes.md)
+- [PR #1203](https://github.com/rexlabsio/rex-app/pull/1203)
+  
+
 ### Assets
 - [UX Doc: Rex UK - Land Registry Integration](https://docs.google.com/document/d/1OqpiBrKFJcKu4VwY-akVB4J79A6_1ZlgR_tLZoYC8BU/edit#heading=h.yduvmhvc306d)
 - [Clubhouse](https://app.clubhouse.io/rexlabs/stories/space/27509/everything)
 - [Github](https://github.com/rexlabsio/rex-app)
 
-
-### [Integration Settings](md/rexlabs/Land_Registry/Integration_Settings.md)  
-- [PR #1203](https://github.com/rexlabsio/rex-app/pull/1203)
-- [Docs](md/rexlabs/Land_Registry/Integration_Settings_Docs.md)  
 
 ### [Importing Bulk Sales History](md/rexlabs/Land_Registry/Importing_Bulk_Sales_History.md)
 ### [Manage Sales History Per Listing](md/rexlabs/Land_Registry/Manage_Sales_History_Per_Listing.md)

@@ -2,7 +2,9 @@
 
 ## [@rexlabs](md/rexlabs/)
 
-[![Paywall](https://firebasestorage.googleapis.com/v0/b/docsify-react.appspot.com/o/Land%20Registry%2Fpaywall.jpg?alt=media&token=7d07568a-559a-4403-9c64-70a40344138d)](md/rexlabs/)
+[![Paywall](https://firebasestorage.googleapis.com/v0/b/docsify-react.appspot.com/o/Land%20Registry%2Fpaywall.jpg?alt=media&token=7d07568a-559a-4403-9c64-70a40344138d)](md/rexlabs/Land_Registry/Land_Registry.md)
+
+### [Land_Registry](md/rexlabs/Land_Registry/Land_Registry.md)
 
 ## [@listingslab](md/listingslab/)
  

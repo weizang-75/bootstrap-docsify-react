@@ -3,6 +3,8 @@
 
 - Find out how to add the Land Registry to this
 
+Administrators will be able to turn on the HM Land Registry integration in order to access the Sales History data.
+
 ### Calling Wings
 
 __request__

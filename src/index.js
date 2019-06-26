@@ -19,23 +19,20 @@ const getStore = () => { return store; };
 export { getStore };
 const persistor = persistStore(store);
 
-// Set Colours
-const colours = {
-    colour1: `#abd4d8`, // light
-    colour2: `#668894`, // mid
-    colour3: `#203c51`, // dark
-}
-
 window.$docsify = {
     name: 'Docsify React',
     repo: 'https://github.com/listingslab-software/docsify-react',
+    executeScript: false,
+    loadNavbar: '_navbar.md',
     auto2top   : true,
     maxLevel   : 3, 
     subMaxLevel: 3,
-    themeColor: colours.colour3,
-    colours,
-    executeScript: false,
-    loadNavbar: '_navbar.md',
+    themeColor: `#203c51`,
+    colours: {
+        colour1: `#abd4d8`, // light
+        colour2: `#668894`, // mid
+        colour3: `#203c51`, // dark
+    },
 }
 
 ReactDOM.render(

@@ -12,6 +12,8 @@ import {
 } from '@material-ui/core/styles';
 // import ScreenFirebaseUI from './ScreenFirebaseUI';
 
+import dispatchAction from '../../store/dispatchAction';
+
 class Docsify extends Component {
 
     state = {
@@ -20,7 +22,7 @@ class Docsify extends Component {
     }
 
     componentDidMount(){
-        console.log ('[componentWillMount]');
+        // console.log ('[componentDidMount]');
         const { hash } = this.props.history.location;
         this.setState({ 
             hasMounted: true, 
@@ -38,11 +40,11 @@ class Docsify extends Component {
             hash
         } = this.props.history.location;
         if (hasMounted){
-            console.log ('[OK, STOP.]', hash, this.state.hash);
+            // console.log ('[OK, STOP.]', hash, this.state.hash);
             if ( this.state.hash !== hash){
                 console.log ('[PAGE CHANGE]');
             };
-            
+            this.checkRestrictions();
         }        
     }
 
@@ -54,8 +56,12 @@ class Docsify extends Component {
         document.body.appendChild(docsifyScript);
     }
 
-    stopDocsify = () => {
-        console.log('stopDocsify');
+    checkRestrictions = () => {
+        const { 
+            history 
+        } = this.props;
+        dispatchAction ({ type: `DOCSIFY/CHECK/RESTRICTIONS`, hash: history.location.hash})
+        // console.log ('checkRestrictions', history.location);
     }
 
     render (){

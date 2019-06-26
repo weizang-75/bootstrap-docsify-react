@@ -7,7 +7,7 @@ disguised as ActionScript in the 1990s. He currently  works at Rexlabs
 in Brisbane as a React Developer. He also does other things.
 
 ### On the interweb
-- [:school: listingslab.com](https://listingslab.com)
+- [listingslab.com](https://listingslab.com)
 - [Github](https://github.com/listingslab)
 - [Linkedin](https://www.linkedin.com/in/listingslab/)
 - [Facebook](https://www.facebook.com/listingslabspage/)

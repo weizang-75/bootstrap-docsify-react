@@ -1,5 +1,5 @@
 {
-    "restrictions": [
+    "restrict": [
         {
             "id": 123
         },

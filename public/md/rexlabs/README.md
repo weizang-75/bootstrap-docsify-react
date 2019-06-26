@@ -21,5 +21,3 @@
 ### In Review QA Process
 - [gh1183 [awating changes]](md/rexlabs/gh/1183.md) __chris__
 - [gh1201 [approved]](md/rexlabs/gh/1201.md) __nik__
-
-[:deciduous_tree: About Rexlabs](https://www.rexlabs.io)

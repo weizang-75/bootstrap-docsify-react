@@ -1,6 +1,8 @@
 # Docsify React
 
-## [@rexlabs](md/rexlabs/README.md)
+## [@rexlabs](md/rexlabs/)
+
+[![Paywall](https://firebasestorage.googleapis.com/v0/b/docsify-react.appspot.com/o/Land%20Registry%2Fpaywall.jpg?alt=media&token=7d07568a-559a-4403-9c64-70a40344138d)](md/rexlabs/)
 
 ## [@listingslab](md/listingslab/listingslab.md)
  
@@ -24,7 +26,8 @@
 
 ## @skool
 - [:notebook: Install](md/skool/Install.md)
-- [:dog: Markdown](md/skool/markdown/Markdown_Cheatsheet.md)
+- [:aerial_tramway: Markdown](md/skool/markdown/Markdown_Cheatsheet.md)
+- [:aerial_tramway: Special Docsify Markdown](md/skool/markdown/Special_Docsify_Markdown.md)
 - [:fire: Firebase](md/skool/Firebase.md)
 - [:computer: Terminal](md/skool/Terminal.md)
 - [:octopus: Squashing commits (rebase -i)](md/skool/git/git_rebase_interactive.md)

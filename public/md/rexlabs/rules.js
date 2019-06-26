@@ -1,3 +1,4 @@
+
 <script>
   window.restrictAccess({
       provider: 'Google',

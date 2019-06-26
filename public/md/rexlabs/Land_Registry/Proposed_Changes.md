@@ -1,19 +1,16 @@
 
 ## Proposed Changes
 
-## QA
+- Find out how to add the Land Registry to this
 
-1. **Verify Land Registry Exists**  
+### Calling Wings
 
-Load the new Land Registry Application/Integration into the classic screen.
+__request__
 
-> [WHEN] you navigate to: [admin/integrations/discover](http://localhost:3000/admin/integrations/discover/)
+![API call](https://firebasestorage.googleapis.com/v0/b/docsify-react.appspot.com/o/rex%2FCONSOLE_API_Request.png?alt=media&token=e05e98fd-55ca-4cc1-8de2-6bf04fdd1639)
 
-![SCREEN_admin-integrations-discover](https://firebasestorage.googleapis.com/v0/b/docsify-react.appspot.com/o/Land%20Registry%2FSCREEN_admin-integrations-discover.png?alt=media&token=15cc0633-c891-42c5-83b4-025d7d4656bf)
+__response__
 
-> [THEN] you should see an integration card for Land Registry  
-[AND] the Land Registry registry app should be searchable
+```json
 
-![HM Land Registry Sales History Data](https://firebasestorage.googleapis.com/v0/b/docsify-react.appspot.com/o/Land%20Registry%2FHM%20Land%20Registry%20Sales%20History%20Data.png?alt=media&token=98ef4d9b-ff61-41d3-aa99-d2fccbbbcf4a)
-
-2. **Verify something else** 
+```

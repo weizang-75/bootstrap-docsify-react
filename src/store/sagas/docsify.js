@@ -21,23 +21,26 @@ function* docsifyCheckRestrictions (action) {
         let path = '/';
         const hashArr = action.hash.split(`/`);
         for (let i=1; i<hashArr.length; i++){
-            if (hashArr[i] !== `` ){
+            if (hashArr[i] !== `` && hashArr[i][0] !== '?' ){
                 path += `${hashArr[i]}/`;
             }
         }
-        path += `_restrictAccess.json`;
+        path += `_restrictDocsify.json`;
+        //console.log (path, Date.now());
         let { data } = yield call(loadRestrictions, path);
         // console.log (data, Date.now());
         yield put(docsifyUpdateRestrictions(data));
     } catch (e) {
-        console.log ('[NO RESTRICTIONS] -> put action creator');
+        // console.log ('[NO RESTRICTIONS] -> put action creator');
+        yield put(docsifyUpdateRestrictions(null));
     }
 }
 
 export function* docsifyPageChange (action) {
     // https://medium.com/@shrsujan2007/implementation-of-redux-saga-in-react-applications-973f5a2a87d2
     try {
-        yield console.log('what to do when a page changes?', action);
+        yield ()=>{};
+        // yield console.log('what to do when a page changes?', action);
     }catch (e) {
         console.log ('[ERROR -> docsifyPageChange Saga]', e)
     }

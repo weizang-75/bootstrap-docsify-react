@@ -2,9 +2,9 @@
 
 ## [@rexlabs](md/rexlabs/)
 
-[![Paywall](https://firebasestorage.googleapis.com/v0/b/docsify-react.appspot.com/o/Land%20Registry%2Fpaywall.jpg?alt=media&token=7d07568a-559a-4403-9c64-70a40344138d)](md/rexlabs/Land_Registry/)
+### [Land Registry Proposed Changes](md/rexlabs/Land_Registry/Proposed_Changes)
 
-### [Land_Registry](md/rexlabs/Land_Registry/)
+[![Paywall](https://firebasestorage.googleapis.com/v0/b/docsify-react.appspot.com/o/Land%20Registry%2Fpaywall.jpg?alt=media&token=7d07568a-559a-4403-9c64-70a40344138d)](md/rexlabs/Land_Registry/)
 
 ## [@listingslab](md/listingslab/)
  
@@ -36,3 +36,8 @@
 - [:octopus: Squashing commits (rebase -i)](md/skool/git/git_rebase_interactive.md)
 - [:octopus: Git Fundamentals](md/skool/git/git_fundamentals.md)
 - [:grin: Emojis](md/skool/markdown/Emojis.md)
+
+### Licence
+
+?> Open Source Licence by Listingslab, 2019  
+ THE SOFTWARE IS PROVIDED "AS IS" AND ... NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE ISN'T ON US. BASICALLY, YOU INT SIN US, ROIGHT?

@@ -3,11 +3,11 @@
 
 We want to provide the ability for Rex users in the UK to be able to activate an integration, allowing them to pull sales history to their properties, in bulk and individually. This feature is very similar to the existing integration in Rex Australia, where RP Data and Price Finder Integrations provide users with sales history. Agents will have more information and knowledge on property sales history, assisting them when determining the best selling price, determining sales trends, etc.
 
-## Part 1) Integration Settings 
-
-Add the Land Registry App to the, err.... app registry.
+## 1. Integration Settings 
 
 ### [Proposed Changes](md/rexlabs/Land_Registry/Proposed_Changes.md)
+Add the Land Registry App to the, err.... app registry.
+
 ### [QA](md/rexlabs/Land_Registry/QA.md)
 
 ### Assets

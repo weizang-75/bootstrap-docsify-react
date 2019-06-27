@@ -24,6 +24,8 @@ class Docsify extends Component {
 
     componentDidMount(){
         // console.log ('[componentDidMount]');
+        const { restrictions } = this.props;
+        console.log ('restrictions', restrictions);
         const { hash } = this.props.history.location;
         this.setState({ 
             hasMounted: true, 
@@ -85,7 +87,7 @@ class Docsify extends Component {
 
 const mapStateToProps = (store) => {
 	return {
-        docsifyObj: store.docsify.docsifyObj,
+        restrictions: store.docsify.restrictions
 	};
 };
 

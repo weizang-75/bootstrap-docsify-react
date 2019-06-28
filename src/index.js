@@ -12,20 +12,18 @@ import { Provider } from 'react-redux';
 
 console.log(`${packageJSON.name} ${packageJSON.version} (${process.env.REACT_APP_ENV})`);
 
-
-
 const store = configureStore();
 const getStore = () => { return store; };
 export { getStore };
 const persistor = persistStore(store);
 
 window.$docsify = {
-    name: 'Docsify React',
-    repo: 'https://github.com/listingslab-software/docsify-react',
+    name: 'Steampunk',
+    repo: 'https://github.com/weizang-75/steampunk',
     executeScript: false,
-    // loadNavbar: '_navbar.md',
+    loadNavbar: '_navbar.md',
     auto2top   : true,
-    maxLevel   : 3, 
+    maxLevel   : 3,
     subMaxLevel: 3,
     themeColor: `#203c51`,
     colours: {

@@ -1,11 +1,11 @@
 {
-  "name": "docsify-react",
-  "version": "0.2.4",
-  "description": "Docsify with a React wrapper & Firebase deployment.",
+  "name": "steampunk",
+  "version": "0.1.0",
+  "description": "looks like it, too",
   "license": "OSL-3.0",
   "author": {
-    "name": "listingslab",
-    "email": "listingslab@gmail.com"
+    "name": "wei zang",
+    "email": "weizang75@gmail.com"
   },
   "scripts": {
     "deploy": "clear && react-scripts build && gulp deploy && cd ./firebase && firebase deploy",
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "github",
-    "url": "https://github.com/listingslab-software/docsify-react"
+    "url": "https://github.com/weizang-75/steampunk"
   },
   "dependencies": {
     "@material-ui/core": "^4.1.1",

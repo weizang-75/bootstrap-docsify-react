@@ -1,10 +1,9 @@
 ---
-name: To Do
-about: Tasks which need doing
-title: "[TO DO]"
-labels: ''
+name: 去做
+about: [TODO]
+title: "[去做]"
+labels: '去做'
 assignees: ''
-
 ---
 
 

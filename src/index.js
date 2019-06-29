@@ -18,10 +18,10 @@ export { getStore };
 const persistor = persistStore(store);
 
 window.$docsify = {
-    name: 'Steampunk',
-    repo: 'https://github.com/weizang-75/steampunk',
+    name: '蒸汽朋克',
+    repo: 'https://github.com/weizang-75/bootstrap-docsify-react',
     executeScript: false,
-    loadNavbar: '_navbar.md',
+    // loadNavbar: '_navbar.md',
     auto2top   : true,
     maxLevel   : 3,
     subMaxLevel: 3,
